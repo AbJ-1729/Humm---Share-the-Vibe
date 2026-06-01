@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="auto">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Humm — Share the Vibe</title>
+  <meta name="description" content="Humm reads the vibe of any room — tap once, get a 0–100 score and a generative Aura. Fully offline, nothing recorded." />
+
+  <!-- Open Graph / social preview -->
+  <meta property="og:title" content="Humm — Share the Vibe" />
+  <meta property="og:description" content="Read the vibe of any room. A 0–100 score and a generative Aura, fully offline." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/icon.png" />
+
+  <link rel="icon" href="assets/icon.png" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Theme toggle (defaults to system; choice persists) -->
+  <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle light/dark theme">
+    <span class="theme-toggle__icon" aria-hidden="true"></span>
+  </button>
+
+  <main class="page">
+    <!-- Title -->
+    <header class="hero">
+      <img class="hero__logo" src="assets/icon.png" alt="Humm app icon" width="96" height="96" />
+      <h1 class="hero__title">Humm</h1>
+      <p class="hero__tagline">share the vibe</p>
+    </header>
+
+    <!-- Get on Google Play (between title and screenshots) -->
+    <a class="play-badge"
+       href="https://play.google.com/store/apps/details?id=com.abj.humm"
+       target="_blank" rel="noopener">
+      <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
+           alt="Get it on Google Play" height="64" />
+    </a>
+
+    <!-- Screenshots — highlighted in the middle -->
+    <section class="shots" aria-label="App screenshots">
+      <figure class="shot"><img src="assets/screenshots/light_initial.png" alt="Humm — home screen (light)" loading="lazy" /></figure>
+      <figure class="shot"><img src="assets/screenshots/dark_focus.png" alt="Humm — Focus score (dark)" loading="lazy" /></figure>
+      <figure class="shot"><img src="assets/screenshots/light_party.png" alt="Humm — Party score (light)" loading="lazy" /></figure>
+      <figure class="shot"><img src="assets/screenshots/dark_initial.png" alt="Humm — home screen (dark)" loading="lazy" /></figure>
+    </section>
+
+    <p class="blurb">
+      Tap once, listen for a few seconds, and Humm scores the room 0–100 in
+      <strong>Focus</strong> or <strong>Party</strong> mode — with a generative Aura
+      that moves with the sound. Everything runs on your device. Nothing is recorded,
+      nothing is sent.
+    </p>
+  </main>
+
+  <!-- Developer contact -->
+  <footer class="footer">
+    <p class="footer__dev">Made by <strong>Abhijai Chugh</strong></p>
+    <p class="footer__contact">
+      <a href="mailto:abhijai.chugh@gmail.com">abhijai.chugh@gmail.com</a>
+    </p>
+    <p class="footer__hash">#ShareTheHumm</p>
+  </footer>
+
+  <script src="theme.js"></script>
+</body>
+</html>
